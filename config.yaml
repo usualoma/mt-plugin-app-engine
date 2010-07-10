@@ -1,0 +1,22 @@
+#plugin information
+id: AppEngine
+name: AppEngine
+version: 0.01
+
+#about this plugin
+description: <__trans phrase="Deploying to AppEngine">
+author_name: <__trans phrase="ToI Inc.">
+author_link: http://tec.toi-planning.net/
+plugin_link: http://tec.toi-planning.net/mt/appengine/
+doc_link: http://tec.toi-planning.net/mt/appengine/manual
+
+#Localization
+l10n_class: AppEngine::L10N
+
+settings:
+    app_engine_endpoint:
+
+blog_config_template: app_engine_blog_config.tmpl
+
+callbacks:
+    build_file: $AppEngine::AppEngine::build_file
